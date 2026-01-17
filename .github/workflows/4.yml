@@ -3,7 +3,7 @@ name: AlwaysData4 Login Monitor
 on:
   workflow_dispatch:        # 手动触发
   schedule:
-    - cron: "0 10 */15 * *" 
+    - cron: "0 9 */20 * *" 
 
 jobs:
   login-check:
@@ -23,7 +23,7 @@ jobs:
       - name: 🐍 Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "4.10"
+          python-version: "3.10"
 
       - name: 📦 Install dependencies
         run: |
