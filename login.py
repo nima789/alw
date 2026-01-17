@@ -38,8 +38,8 @@ try:
     page.get(LOGIN_URL)
 
     page.ele('#id_login', timeout=10)
-    page.ele('#id_login').input(EMAIL, interval=0.1)
-    page.ele('#id_password').input(PASSWORD, interval=0.1)
+    page.ele('#id_login').input(EMAIL)
+    page.ele('#id_password').input(PASSWORD)
 
     page.run_js("document.getElementById('form-login').submit();")
     sleep(3)
