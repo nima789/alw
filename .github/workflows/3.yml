@@ -1,4 +1,4 @@
-name: AlwaysData Login Monitor
+name: AlwaysData3 Login Monitor
 
 on:
   workflow_dispatch:        # 手动触发
@@ -11,10 +11,10 @@ jobs:
     timeout-minutes: 15
 
     env:
-      ALWAYS_EMAIL: ${{ secrets.ALWAYS_EMAIL }}
-      ALWAYS_PASSWORD: ${{ secrets.ALWAYS_PASSWORD }}
-      TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-      TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+      ALWAYS_EMAIL3: ${{ secrets.ALWAYS_EMAIL3 }}
+      ALWAYS_PASSWORD3: ${{ secrets.ALWAYS_PASSWORD3 }}
+      TG_BOT_TOKEN3: ${{ secrets.TG_BOT_TOKEN3 }}
+      TG_CHAT_ID3: ${{ secrets.TG_CHAT_ID3 }}
 
     steps:
       - name: 📥 Checkout repository
