@@ -19,6 +19,16 @@ jobs:
     steps:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
+        
+      # 🔐 启动 Cloudflare WARP（关键步骤）
+      - name: 🌐 Enable Cloudflare WARP
+        uses: fscarmen/warp-on-actions@v1
+        with:
+          mode: client     # 客户端模式（最常用）
+
+      # （可选）打印当前出口 IP，便于你验证
+      - name: 🔎 Show IP after WARP
+        run: curl ifconfig.me
 
       - name: 🐍 Set up Python
         uses: actions/setup-python@v5
