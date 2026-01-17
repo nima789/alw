@@ -28,7 +28,7 @@ jobs:
 
       # （可选）打印当前出口 IP，便于你验证
       - name: 🔎 Show IP after WARP
-        run: curl ifconfig.me
+        run: curl https://ip.luckyxz.pp.ua/json
 
       - name: 🐍 Set up Python
         uses: actions/setup-python@v5
