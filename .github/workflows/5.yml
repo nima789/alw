@@ -22,7 +22,7 @@ jobs:
         
       # 🔐 启动 Cloudflare WARP（关键步骤）
       - name: 🌐 Enable Cloudflare WARP
-        uses: fscarmen/warp-on-actions@v1
+        uses: fscarmen/warp-on-actions@main
         with:
           mode: client     # 客户端模式（最常用）
 
