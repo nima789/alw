@@ -47,16 +47,16 @@ try:
     print("当前 URL:", page.url)
 
     if '/login' not in page.url:
-        msg = "✅ alwaysdata 登录成功（无头模式）"
+        msg = "✅ alwaysdata {EMAIL} 登录成功"
         print(msg)
         send_telegram(msg)
     else:
-        msg = "❌ alwaysdata 登录失败（仍在登录页）"
+        msg = "❌ alwaysdata {EMAIL} 登录失败（仍在登录页）"
         print(msg)
         send_telegram(msg)
 
 except Exception as e:
-    err_msg = f"🔥 alwaysdata 登录脚本异常：\n{e}"
+    err_msg = f"🔥 alwaysdata {EMAIL} 登录脚本异常：\n{e}"
     print(err_msg)
     send_telegram(err_msg)
 
