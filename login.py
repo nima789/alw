@@ -47,11 +47,11 @@ try:
     print("当前 URL:", page.url)
 
     if '/login' not in page.url:
-        msg = "✅ alwaysdata {EMAIL} 登录成功"
+        msg = f"✅ alwaysdata {EMAIL} 登录成功"
         print(msg)
         send_telegram(msg)
     else:
-        msg = "❌ alwaysdata {EMAIL} 登录失败（仍在登录页）"
+        msg = f"❌ alwaysdata {EMAIL} 登录失败（仍在登录页）"
         print(msg)
         send_telegram(msg)
 
