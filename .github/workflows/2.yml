@@ -3,7 +3,7 @@ name: AlwaysData2 Login Monitor
 on:
   workflow_dispatch:        # 手动触发
   schedule:
-    - cron: "0 10 */15 * *" 
+    - cron: "0 10 */27 * *" 
 
 jobs:
   login-check:
